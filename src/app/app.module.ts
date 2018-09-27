@@ -11,11 +11,7 @@ import { AppComponent } from './app.component';
 import { LayoutModule } from '@angular/cdk/layout';
 import { NavigationComponent } from './navigation/navigation.component';
 import { LoginComponent } from './login/login.component';
-
-const appRoutes: Routes = [
-  { path: 'dashboard', component: NavigationComponent },
-  { path: 'login', component: LoginComponent }
-];
+import { RoutingModule } from './material/routing.module';
 
 @NgModule({
   declarations: [
@@ -31,7 +27,7 @@ const appRoutes: Routes = [
     BrowserAnimationsModule,
     FlexLayoutModule,
     LayoutModule,
-    RouterModule.forRoot(appRoutes),
+    RoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]
