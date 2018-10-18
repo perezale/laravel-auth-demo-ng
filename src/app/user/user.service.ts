@@ -14,7 +14,7 @@ export class UserService {
     private oauthUrl = "http://localhost/oauth/token";
     private usersUrl = "http://localhost/api/users";
 
-    getAccessToken() {
+    getAccessToken($user, $pass) {
         var headers = new Headers({
             "Content-Type": "application/json",
             "Accept": "application/json"
@@ -23,7 +23,7 @@ export class UserService {
         let postData = {
             grant_type: "password",
             client_id: 2,
-            client_secret: "YZwf3DeHL4xiRZr4rpKFfzV4thWqf2LppMLtuoEx",
+            client_secret: "xcYr1PqI1VRJerM3hzPX1QHoBelGx0UGv5U5hFUy",
             username: "test@test.com",
             password: "123456",
             scope: ""
